@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(221, 241, 37, 0.5), rgba(235, 33, 33, 0.8)), url(../images/cam-nang-mua-he.jpg) no-repeat center/cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+
+body.hot {
+    background-image: linear-gradient(to top, rgba(221, 241, 37, 0.5), rgba(235, 33, 33, 0.8)), url(../images/cam-nang-mua-he.jpg) no-repeat center/cover;
+    color: #fff;
+}
+
+body.cold {
+    background: linear-gradient(to top, rgba(24, 58, 167, 0.5), rgba(29, 140, 204, 0.8)), url(../images/Screen-Shot-2018-11-12-at-3.22.18-PM-1280x720.jpg) no-repeat center/cover;
+    color: #000
+}
+
+#weather {
+    height: 450px;
+    width: 300px;
+    padding: 20px 25px;
+    background: url(../images/cam-nang-mua-he.jpg) no-repeat center/cover;
+
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 16px rgba(231, 83, 14, 0.5);
+}
+
+#weather.hot {
+    box-shadow: 0px 0px 30px 16px rgba(231, 83, 14, 0.5);
+    background: linear-gradient(to top, rgba(154, 163, 94, 0.5), rgba(97, 19, 19, 0.9)),url(../images/cam-nang-mua-he.jpg) no-repeat center/cover;
+
+}
+
+#weather.cold {
+    box-shadow: 0px 0px 30px 16px rgba(10, 75, 196, 0.5);
+    background: linear-gradient(to top, rgba(221, 223, 231, 0.5), rgba(82, 167, 216, 0.8)),url(../images/Screen-Shot-2018-11-12-at-3.22.18-PM-1280x720.jpg) no-repeat center/cover;
+    
+}
+
+.search {
+    padding: 4px 12px;
+    width: 100%;
+    border-radius: 0 8px 0 8px;
+    margin-bottom: 12px;
+    outline: none;
+    border: none;
+    background: rgba(255,255,255,0.6);
+    color: black;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.content.hide,
+.times.hide,
+.temperative.hide,
+.short-desc.hide,
+.more-desc.hide {
+    display: none;
+}
+
+.content h1{
+    text-align: center;
+}
+
+.times {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.temperative {
+    height: 100px;
+    width: 200px;
+    background-image: linear-gradient(to top,rgba(82, 90, 104, 0.3), rgba(126, 157, 235, 0.7));
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: auto;
+    margin-bottom: 16px;
+}
+
+.short-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+    font-weight: 600
+}
+
+.more-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-desc .visibility {
+    display: flex;
+    flex-direction: column;
+    /* padding: 5px; */
+    
+}
+
+.visibility i {
+    margin: 10px 0;
+    text-align: center;
+}
+
